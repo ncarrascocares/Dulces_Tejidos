@@ -1,0 +1,28 @@
+* {
+    /*margen*/
+    margin: 0;
+    /*la distancia que existe entre el margen y el contenido*/
+    padding: 0;
+    /*tamaño de las cajas*/
+    box-sizing: border-box;
+}
+
+body {
+    /*color del fondo del body*/
+    background: #f3f3f3;
+    /*tipo de fuente*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    /*lo que tomara del maximo del ancho*/
+    width: 90%;
+    /*el maximo de ancho que abarcara el contenedor*/
+    max-width: 800px;
+    /*el margen sera automatico, por lo que se centrara de manera auto*/
+    margin: auto;
+}
