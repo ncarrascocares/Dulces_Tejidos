@@ -84,3 +84,36 @@ header .categorias a {
 header .categorias a.activo {
     color: #000;
 }
+
+
+/*Grid*/
+
+.grid {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+    opacity: 1;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    /*con la funcion calc, puedo modificar el ancho, en este caso resto los margenes para que cubra el 100% */
+    width: calc(33.33% - 20px);
+}
+
+.grid .item-contenido {
+    position: relative;
+}
+
+.grid .item img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
